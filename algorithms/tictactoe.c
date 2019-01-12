@@ -10,8 +10,10 @@ int drawBoard(Board board) {
   int totalColumns = 5;
   int cellIndex = 0;
 
-  for (int row = 0; row < totalRows; row++) {
-    for (int column = 0; column < totalColumns; column++) {
+  for (int row = 0; row < totalRows; row++) 
+  {
+    for (int column = 0; column < totalColumns; column++) 
+    {
       if (row % 2 != 0 && column % 2 != 0) 
       {
         printf("+");
