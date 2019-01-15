@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-typedef struct {
+struct Board{
   int cellCount;
   char cells[9];
-} Board;
+};
 
-int drawBoard(Board board) {
+int drawBoard(struct Board board) {
   int totalRows = 5;
   int totalColumns = 5;
   int cellIndex = 0;
@@ -37,7 +37,7 @@ int drawBoard(Board board) {
 }
 
 int main() {
-  Board gameBoard;
+  struct Board gameBoard;
   gameBoard.cellCount = 9;
   gameBoard.cells[0] = 'x';
   gameBoard.cells[1] = 'o';
